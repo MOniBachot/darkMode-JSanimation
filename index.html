@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindigo · Desarrollo Web & Software</title>
+    <meta name="description" content="Impulsamos tu negocio con soluciones digitales a medida. Desarrollo de software, diseño web, consultoría UX/UI. Queremos ayudarte a llegar al siguiente nivel.">
+    <meta name="keywords" content="desarrollo de software, diseño web, apps, ecommerce, lindigo, UX/UI, experiencia de usuario, folder IT, Crombie, software deveolpment, web design">
+     <!-- Open Graph -->
+    <meta property="og:title" content="Lindigo | Soluciones digitales a medida">
+    <meta property="og:description" content="Transformamos ideas en productos funcionales. Desarrollo de software, diseño web y más.">
+    <meta property="og:image" content="https://lindigo.com/Assets/preview.jpg">
+    <meta property="og:url" content="https://lindigo.com">
+    <meta property="og:type" content="website">
+    <!--Recursos externos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
+</head>
+<body>
+    <!--nav section-->
+    <nav class="navbar p-3">
+      <div class="container p-3" id="main_nav">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/logo_nav.svg" id="logo">
+          </a>
+        <!--botones menu-->
+          <div class="d-flex align-items-center ms-auto">
+            <ul class="navbar-nav">
+              <!--<li class="nav-item">
+                  <a class="nav-link" href="#contacto">
+                      <button id="contacto" class="button-nav">Contacto</button>
+                  </a>
+              </li>-->
+              <li class="nav-item">
+                  <button id="theme-toggle" class="button-nav">
+                      <i id="icon" class="fas fa-sun"></i> Light
+                  </button>
+              </li>
+            </ul>
+          </div>
+        
+      </div>
+    </nav>
+    <!-- hero section -->
+    <header class="container-fluid" id="hero">
+      <canvas id="animationCanvas"></canvas>
+        <div class="row justify-content-center pb-5">
+          <div class="col-lg-8 col-md-10 text-left">
+            <label class="label-2">Since 2022</label>
+            <h1>Soluciones digitales que impulsan tu empresa</h1>
+            <h2>Lindigo · Desarrollo de Software y Dise&#241;o Web</h2>
+          </div>  
+            <a class="text-center" href="#formulario">
+              <button class="button-nav">Hablemos!</button>
+          </a>
+
+        </div>
+      </header>
+    <!--cars section -->
+    <main class="container-fluid d-flex justify-content-center align-items-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center" id="card-section">
+        <div class="col">
+                <div class="custom-card" data-bs-toggle="modal" data-bs-target="#modalWeb">
+                    <img src="Assets/sitio_web.svg" class="icon-card">
+                    <h5 class="label-1">Diseño Web</h5>
+                    <p>Creamos sitios web atractivos, optimizados y centrados en la experiencia del usuario</p>
+                    <!--<button class="button-card">saber más</button>-->
+                </div>
+            </div>
+            <div class="col">
+              <div class="custom-card" data-bs-toggle="modal" data-bs-target="#modalSoftware">
+                  <img src="Assets/software.svg" class="icon-card">
+                  <h5 class="label-2">Software Empresarial</h5>
+                  <p>Automatizamos procesos con soluciones escalables que potencian la eficiencia de tu negocio</p>
+                  <!--<button class="button-card">saber más</button>-->
+              </div>
+          </div>
+          <div class="col">
+            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#modalApp">
+                <img src="Assets/app.svg" class="icon-card">
+                <h5 class="label-3">Apps y E-commerce</h5>
+                <p>Desarrollamos aplicaciones y tiendas online que convierten visitantes en clientes</p>
+                <!--<button class="button-card">saber más</button>-->
+            </div>
+        </div>    
+      </div>
+    </main>
+    <!-- information section -->
+    <section class="container-fluid d-flex justify-content-center align-items-center">
+      <div class="row g-4" id="information_section">
+        <!-- Columna 1: Imagen -->
+        <div class="col-md-6" id="titulo-imagen">
+          <img src="Assets/metodologia.webp" alt="metodología de trabajo Lindigo" class="img-fluid" id="metod">
+          
+        </div>
+        
+        <!-- Columna 2: Acordeón de Preguntas Frecuentes -->
+        <div class="col-md-6">
+          <div class="accordion" id="accordionFAQ">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <p>¿Cuánto cuesta diseñar y desarrollar un sitio web?</p>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Las necesidades de cada negocio son diferentes, esto hace que las funcionalidades cambien, por eso los precios de un diseño web a otro pueden ser bastante diferentes. Sugerimos que utilice nuestro formulario de pedido de cotización para que podamos ayudarlo y cotizar de manera más específica su requerimiento.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Cuánto tiempo se tarda en construir un sitio web?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  De manera similar a la pregunta sobre el costo del sitio web, la línea de tiempo variará mucho según el alcance de su proyecto de diseño web. Por lo general, nuestros proyectos de construcción integral tardan de 1 a 3 meses en completarse. Desarrollar un sitio web es transitar cuatro etapas bien definidas. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ¿Puedo solicitar cambios una vez iniciado el desarrollo?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  nuestra metodología de trabajo contempla instancias de verificación en distintas etapas del proceso. Durante estas fases, revisamos el avance contigo para asegurarnos de que el producto final cumpla con tus expectativas. Antes de iniciar, realizamos un relevamiento exhaustivo para comprender a fondo tus necesidades y definir los alcances del proyecto. Si después de las etapas de verificación necesitas modificaciones adicionales, podemos implementarlas y presupuestarlas según su complejidad. Nuestro objetivo es ofrecerte una solución flexible y alineada con tus requerimientos.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Hay un costo de manteniemiento después del desarrollo?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Depende de cada proyecto. Algunos requieren mantenimiento regular para actualizaciones, optimización o nuevas funcionalidades, mientras que otros pueden funcionar sin mantenimiento continuo. Ofrecemos dos opciones: 1.Planes mensuales: Para quienes necesitan actualizaciones frecuentes, soporte técnico y mejoras constantes. 2.Mantenimiento puntual: Si solo necesitas ajustes específicos, puedes solicitarlos cuando los requieras, sin compromiso de suscripción.
+                  <div><p><b>Te asesoramos según las necesidades de tu proyecto para que elijas la mejor opción.</b></p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about us section-->
+    <section class="container-fluid" id="about-us">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="Assets/app-left.webp" alt="Proyecto de diseño en mobile" id="mobile-img">
+        </div>
+        <div class="col-md-6 p-3">
+          <label class="label-2">Lindigo</label>
+          <h4 class="slide-in from-right">Sobre nosotros</h4>
+          <p>Somos una empresa joven con una mirada fresca e innovadora. Trabajamos para brindar soluciones digitales <label>funcionales,</label> escalables y totalmente adaptadas a cada proyecto. Creemos en la colaboración como eje del desarrollo: nos involucramos en cada etapa y nos convertimos en <label>socios estratégicos</label> de nuestros clientes, acompañando sus ideas desde el inicio hasta su implementación. Más que un proveedor, buscamos ser parte del crecimiento de cada negocio. </p>
+        </div>
+      </div>
+
+    </section>
+    <!--contac form section-->
+    <section class="container-fluid" id="formulario">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-12 p-3">
+          <h4 class="slide-in from-left">Las grandes ideas comienzan con el primer paso</h4>
+          <p class="small-text">Estamos listos para analizar tu proyecto y ayudarte a llevarlo al siguiente nivel</p>
+        </div>
+        <div class="col-md-1 col-6">
+        </div>
+       
+          <div class="col-md-6">
+            <form method="POST">
+            <div class="mb-3" id="contacto">
+              <label for="nombre" class="form-label"></label>
+              <input type="email" class="form" placeholder="Nombre completo">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"></label>
+              <input type="email" class="form" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="text" class="form-label"></label>
+              <textarea class="form" rows="3" placeholder="Cuentanos sobre tu proyecto, idea o dudas que tengas! Nos pondremos en contacto a la brevedad"></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="button-nav">Enviar</button>
+            </div>
+          </form>
+          </div>
+      
+      </div>
+
+    </section>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Logo -->
+          <div class="col-md-4 logo">
+            <img src="Assets/logo_nav.svg" alt="Logo" id="logo-footer">
+          </div>
+          
+          <!-- Columna 2: Datos de contacto -->
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <ul>
+              <p>contacto@lindigo.com</p>
+              <p>+54 342 463 5311</p>
+              <p>Santa Fe, Argentina</p>
+            </ul>
+          </div>
+  
+          <!-- Columna 3: Lista de Servicios -->
+          <div class="col-md-4">
+            <h5>Servicios</h5>
+            <ul>
+              <li>Diseño web</li>
+              <li>Desarrollo de software</li>
+              <li>Consultoría UX/UI</li>
+              <li>Sitios web con CRM / WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--script-->
+      <script src="scripts.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <!-- Enlace a Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  
+  <!-- Modales de las cards
+<div class="modal fade" id="modalWeb" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-style">
+      <div class="modal-header">
+        <h5 class="modal-title">Diseño Web</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p> Desarrollamos sitios web a medida, front y back-end customizado o a través de CRM. Somos una consultoría UX/UI donde diseñamos la experiencia de usuario para que tu página web sea intuitiva y agradable. Más importante aún, consolidamos tu marca en el espacio digital. Desde el primer boceto hasta la implementación en código, trabajamos codo a codo con tu empresa para que el resultado sea lo deseado. Usamos tecnologías web actuales y optimizadas para garantizar rendimiento, accesibilidad y optimización para un buen posicionamiento en los motores de búsqueda (SEO).
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalSoftware" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content  modal-style">
+      <div class="modal-header">
+        <h5 class="modal-title">Software Empresarial</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Diseñamos software a medida, partiendo de un análisis riguroso de los procesos y metodologías de tu empresa. Desarrollamos herramientas funcionales que responden a tus necesidades específicas, optimizando recursos y mejorando la gestión interna. Nuestra propuesta es transversal y estratégica: entendemos tu contexto para que la tecnología se alinee con tus objetivos de negocio.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalApp" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content  modal-style">
+      <div class="modal-header">
+        <h5 class="modal-title">Apps y E-commerce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Desarrollamos aplicaciones web y móviles con foco en la experiencia del usuario (UX/UI). Creamos tiendas online a medida que no solo se ven bien, sino que funcionan de forma clara y eficiente. Priorizamos el diseño intuitivo, la arquitectura de la información y la navegación fluida. Las plataformas de e-commerce están optimizadas para el posicionamiento en buscadores (SEO), adaptadas a los objetivos de tu negocio y escalables según tus necesidades.</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+</body>
+</html>
