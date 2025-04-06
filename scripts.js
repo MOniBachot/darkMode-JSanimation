@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       },
       {
-        threshold: 0.3 // Más sensible para mobile
+        threshold: 0.3 // 
       }
     );
   
@@ -70,7 +70,7 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
     createParticles();
 });
 
-// ANIMACION
+// ANIMACION PARTICULAS
 function createParticleAnimation(canvasId) {
     const canvas = document.getElementById(canvasId);
     const ctx = canvas.getContext("2d");
@@ -88,7 +88,7 @@ function createParticleAnimation(canvasId) {
     const numParticles = 100;
 
     // Colores de las partículas
-    const particleColors = ["#ff0080", "#ff8c00", "#6a0dad"]; // Fucsia, Naranja, Lila
+    const particleColors = ["#ff0080", "#ff8c00", "#6a0dad"]; // 
 
     // Crear partículas
     function createParticles() {
